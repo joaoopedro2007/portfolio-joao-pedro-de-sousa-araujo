@@ -24,13 +24,16 @@ Atualmente cursando o 2º período de Análise e Desenvolvimento de Sistemas na 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-ba
 dge&logo=openjdk&logoColor=white)
 #### 🗄 Banco de Dados
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-t
+![MySQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-t
 he-badge&logo=postgresql&logoColor=white)
+
 #### 🤖 Inteligência Artificial & Ciência de Dados
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-th
+![Python](https://img.shields.io/badge/pandas-%23150458.svg?style=for-th
 e-badge&logo=pandas&logoColor=white)
+
 ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg
 ?style=for-the-badge&logo=scikit-learn&logoColor=white)
+
 ---
 ### 📂 Portfólio de Projetos
 #### 󰳕 Desenvolvimento Front-End para Web
