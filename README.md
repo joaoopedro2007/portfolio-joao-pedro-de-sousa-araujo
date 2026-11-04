@@ -4,7 +4,7 @@
 ### 📫 Contato & Redes Sociais
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jo%C3%A3o-pedro-9aa1333b9?utm_source=share_via&utm_content=profile&utm_medium=member_android)
 
-[![E-mail](https://img.shields.io/badge/-Email-000?style=for-the-badge&logo=microsoft-outlook&logoColor=007BFF)](mailto:SEUEMAIL)           
+[![Email](https://img.shields.io/badge/Email-Gmail-red?style=for-the-badge&logo=gmail&logoColor=white)](jpsouzaaa2024@gmail.com)         
 jpsouzaaa2024@gmail.com
 
 [![Currículo](https://img.shields.io/badge/Currículo-000000?style=for-th
