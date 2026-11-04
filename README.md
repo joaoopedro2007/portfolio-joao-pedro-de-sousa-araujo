@@ -26,8 +26,9 @@ dge&logo=openjdk&logoColor=white)
 he-badge&logo=postgresql&logoColor=white)
 
 #### 🤖 Inteligência Artificial & Ciência de Dados
-![Python](https://img.shields.io/badge/pandas-%23150458.svg?style=for-th
-e-badge&logo=pandas&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+
+
 
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-000?style=for-the-badge&logo=scikitlearn&logoColor=007BFF)
 
