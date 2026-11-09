@@ -10,7 +10,6 @@ Desenvolvido como parte da disciplina de **Desenvolvimento Front-End Para Web (2
 * **Bibliotecas:** Bootstrap 5 e Chart.js
 * **Ferramentas:** VSCode e Node.js
 * **Modelo de IA:** ChatGPT
-* **Hospedagem:** GitHub Pages
 ## 📊 Resultados e Aprendizados
 O projeto resultou em uma aplicação web educativa, com visual moderno, navegação interativa e recursos que levam o usuário a refletir sobre o uso responsável da inteligência artificial.
 
