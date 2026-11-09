@@ -34,6 +34,6 @@ Essas ferramentas foram utilizadas como suporte na estruturação do código HTM
 
 O uso da inteligência artificial teve como finalidade auxiliar o processo de aprendizado e desenvolvimento, mantendo a responsabilidade dos desenvolvedores pela revisão, compreensão, adaptação e funcionamento da aplicação final.
 ## 💻 Deploy do projeto
-[Clique para acessar](https://seu-usuario.github.io/xxxxxxxxx/)
+[Clique para acessar](https://joaoopedro2007.github.io/meu-site/)
 ---
 [Voltar ao início](https://github.com/seu-usuario/portfolio-usuario)
