@@ -7,14 +7,18 @@ A **Calculadora de IMC** é uma aplicação web de página única que calcula o 
 * **Ferramentas:** VSCode
 * **Modelo de IA:** Claude
 ## 📊 Resultados e Aprendizados
-O projeto resultou em uma calculadora funcional, simples de usar e adaptável a diferentes tamanhos de tela.
+O projeto resultou em uma calculadora funcional, que recebe o peso e a altura informados pelo usuário e mostra o IMC calculado junto com a sua classificação.
 
-* **Cálculo e classificação:** aplicação da fórmula peso ÷ (altura × altura) com seis faixas de classificação.
-* **Validação de dados:** aceita vírgula ou ponto nos números, entende altura em centímetros e exibe mensagem de erro para valores inválidos.
-* **Interface interativa:** manipulação do DOM para exibir o resultado, a classificação colorida e o marcador animado na barra de escala.
-* **Estilização:** CSS próprio com variáveis, layout em grid e design responsivo.
-## 🧠 Declaração de Uso Ético da IA
-Este projeto utilizou inteligência artificial (Claude) estritamente como ferramenta de suporte tecnológico para estruturação do HTML, estilização com CSS e implementação das funções em JavaScript. Todo o código gerado foi revisado, testado e compreendido por mim, garantindo a minha responsabilidade integral sobre a autoria final, integridade e funcionamento da aplicação.
+Ao longo do desenvolvimento, pude aprender e praticar os seguintes conhecimentos:
+
+* **Manipulação do DOM:** usei JavaScript para pegar os valores digitados nos campos e atualizar o conteúdo da página sem precisar recarregá-la.
+* **Lógica de Programação:** apliquei operações matemáticas e condicionais (if/else) para calcular o IMC e definir em qual faixa ele se encaixa.
+* **Validação de Dados:** criei verificações que impedem o cálculo quando peso ou altura estão vazios, inválidos ou iguais a zero.
+* **Estilização com CSS:** montei uma interface simples, organizada e fácil de usar, com cores e efeitos visuais, como o do botão ao passar o mouse.
+* **Interatividade:** fiz uma função em JavaScript que é executada ao clicar no botão e exibe o resultado na hora.
+* **Formatação de Resultados:** usei o método toFixed() para mostrar o IMC com duas casas decimais.
+
+O projeto me ajudou a evoluir em HTML, CSS e JavaScript, principalmente em como conectar a interface, a entrada de dados e a lógica do programa.
 ## 💻 Deploy do projeto
 [Clique para acessar](https://joaoopedro2007.github.io/Calculadora-IMC/)
 ---
