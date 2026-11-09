@@ -30,4 +30,4 @@ Todo o código gerado foi revisado e testado pelos integrantes, que mantêm a re
 ## 💻 Deploy do projeto
 [Clique para acessar](https://henriquepedro500.github.io/Margem-Humana/)
 ---
-[Voltar ao início](https://github.com/henriquepedro500)
+[Voltar ao início](https://github.com/henriquepedro500/Margem-Humana)
