@@ -8,21 +8,23 @@ Desenvolvido como parte da disciplina de **Desenvolvimento Front-End Para Web (2
 ## 🚀 Tecnologias Utilizadas
 * **Linguagem:** HTML5, CSS3 e JavaScript
 * **Bibliotecas:** Bootstrap 5 e Chart.js
-* **Ferramentas:** VSCode, GitHub e Node.js
+* **Ferramentas:** VSCode e Node.js
 * **Modelo de IA:** ChatGPT
 * **Hospedagem:** GitHub Pages
 ## 📊 Resultados e Aprendizados
-O projeto resultou em uma aplicação web educativa, com interface moderna, navegação interativa e funcionalidades que estimulam a reflexão sobre o uso responsável da inteligência artificial.
+O projeto resultou em uma aplicação web educativa, com visual moderno, navegação interativa e recursos que levam o usuário a refletir sobre o uso responsável da inteligência artificial.
 
-Durante o desenvolvimento, foram trabalhados os seguintes conhecimentos:
+Ao longo do desenvolvimento, aprendemos e praticamos os seguintes conhecimentos:
 
-* **Estruturação HTML e responsividade:** páginas com elementos semânticos e interface adaptável a diferentes dispositivos, com CSS3 e Bootstrap.
-* **Interatividade com JavaScript:** manipulação do DOM e funcionalidades dinâmicas.
-* **Simulador de decisões**: quatro cenários com alternativas, feedbacks e pontuação educativa de 0 a 8 pontos.
-* **Visualização de dados**: gráficos interativos com Chart.js.
-* **Personalização e acessibilidade**: tema claro/escuro com preferência salva e navegação por teclado.
-* **Exportação de resultados**: download de um protocolo de revisão em formato .txt.
-* **Publicação web**: versionamento e deploy com GitHub e GitHub Pages.
+* **Estruturação HTML e responsividade:** montamos páginas com elementos semânticos e uma interface que se adapta a diferentes dispositivos, usando CSS3 e Bootstrap.
+* **Interatividade com JavaScript:** usamos a manipulação do DOM para criar funcionalidades dinâmicas na página.
+* **Simulador de decisões:** criamos quatro cenários com alternativas, feedbacks e uma pontuação educativa de 0 a 8 pontos.
+* **Visualização de dados:** apresentamos informações de pesquisas em gráficos interativos feitos com Chart.js.
+* **Personalização e acessibilidade:** implementamos o tema claro/escuro, que guarda a preferência do usuário, e a navegação pelo teclado.
+* **Exportação de resultados:** criamos o download de um protocolo de revisão em formato .txt.
+* **Publicação web:** versionamos o código com o GitHub e publicamos o site com o GitHub Pages.
+
+O projeto nos ajudou a evoluir em HTML, CSS e JavaScript, principalmente na integração entre interface, interatividade e conteúdo.
 ## 🧠 Declaração de Uso Ético da IA
 Este projeto utilizou inteligência artificial, por meio do ChatGPT, como ferramenta de suporte tecnológico na estruturação do HTML, estilização com CSS, implementação de funcionalidades em JavaScript, criação do simulador e integração dos gráficos.
 
