@@ -1,4 +1,4 @@
-# 🎬 Nome do Projeto
+# 🎬 Margem Humana
 ## 📝 Descrição do Projeto
 O projeto **Margem Humana — Quem pode discordar da IA no primeiro emprego?** consiste em um site educativo e interativo que aborda os desafios enfrentados por jovens profissionais diante do uso da inteligência artificial no ambiente de trabalho.
 
