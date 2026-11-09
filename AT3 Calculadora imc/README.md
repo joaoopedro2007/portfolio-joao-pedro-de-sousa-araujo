@@ -1,37 +1,20 @@
-# 🎬 Nome do Projeto
+# 🧮 Calculadora de IMC
 ## 📝 Descrição do Projeto
-Este projeto consiste em um motor de recomendação inteligente que
-utiliza técnicas de filtragem colaborativa e baseada em conteúdo. O
-objetivo principal é mitigar a "paralisia de escolha", oferecendo aos
-usuários sugestões personalizadas com base em seu histórico de
-visualização e preferências de gênero.
-Desenvolvido como parte das disciplinas de **Desenvolvimento Front-End
-Para Web (2026.2)**, o sistema processa grandes volumes de dados
-(datasets de filmes e avaliações) para identificar padrões de
-comportamento e similaridades entre títulos, utilizando algoritmos de
-aprendizado de máquina para prever a nota que um usuário daria a um
-filme ainda não assistido.
+A **Calculadora de IMC** é uma aplicação web de página única que calcula o Índice de Massa Corporal a partir do peso e da altura informados pelo usuário e classifica o resultado em faixas, de baixo peso a obesidade grau III. O resultado aparece com o valor do IMC, a classificação, uma mensagem orientativa e uma barra de escala colorida com marcador. Desenvolvido como parte da disciplina de **Desenvolvimento Front-End Para Web (2026.2)**.
 ## 🚀 Tecnologias Utilizadas
-* **Linguagem:** HTML5, CSS e JavaScript
-* **Bibliotecas:** Bootstrap
+* **Linguagem:** HTML5, CSS3 e JavaScript
+* **Bibliotecas:** nenhuma (apenas a fonte Fraunces, do Google Fonts)
 * **Ferramentas:** VSCode
-* **Modelo de IA:** Gemini
+* **Modelo de IA:** Claude
 ## 📊 Resultados e Aprendizados
-O projeto alcançou resultados sólidos em ambiente de teste, demonstrando
-a eficácia do modelo híbrido.
-* **O modelo atingiu 92% de acurácia** nos testes de validação.
-* **Redução de Ruído:** Aprendi a aplicar técnicas de limpeza e
-normalização de dados para melhorar a performance dos algoritmos.
-* **Visualização de Clusters:** Implementei gráficos que mostram como o
-sistema agrupa filmes por afinidade.
+O projeto resultou em uma calculadora funcional, simples de usar e adaptável a diferentes tamanhos de tela.
+
+* **Cálculo e classificação:** aplicação da fórmula peso ÷ (altura × altura) com seis faixas de classificação.
+* **Validação de dados:** aceita vírgula ou ponto nos números, entende altura em centímetros e exibe mensagem de erro para valores inválidos.
+* **Interface interativa:** manipulação do DOM para exibir o resultado, a classificação colorida e o marcador animado na barra de escala.
+* **Estilização:** CSS próprio com variáveis, layout em grid e design responsivo.
 ## 🧠 Declaração de Uso Ético da IA
-Este projeto utilizou inteligência artificial ([Nome do Modelo, ex:
-ChatGPT / GitHub Copilot]) estritamente como ferramenta de suporte
-tecnológico para [Finalidade, ex: estruturação inicial do HTML e
-depuração de funções em JavaScript]. Todo o código gerado foi revisado,
-testado e compreendido por mim, garantindo a minha responsabilidade
-integral sobre a autoria final, integridade e funcionamento da
-aplicação.
+Este projeto utilizou inteligência artificial (Claude) estritamente como ferramenta de suporte tecnológico para estruturação do HTML, estilização com CSS e implementação das funções em JavaScript. Todo o código gerado foi revisado, testado e compreendido por mim, garantindo a minha responsabilidade integral sobre a autoria final, integridade e funcionamento da aplicação.
 ## 💻 Deploy do projeto
 [Clique para acessar](https://joaoopedro2007.github.io/Calculadora-IMC/)
 ---
