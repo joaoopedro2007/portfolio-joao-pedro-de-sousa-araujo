@@ -36,4 +36,4 @@ O uso da inteligência artificial teve como finalidade auxiliar o processo de ap
 ## 💻 Deploy do projeto
 [Clique para acessar](https://joaoopedro2007.github.io/meu-site/)
 ---
-[Voltar ao início](https://github.com/seu-usuario/portfolio-usuario)
+[Voltar ao início](https://github.com/joaoopedro2007/meu-site)
