@@ -34,18 +34,15 @@ Atualmente cursando o 2º período de Análise e Desenvolvimento de Sistemas na 
 #### 󰳕 Desenvolvimento Front-End para Web
 | Projeto | Descrição | Link |
 | :--- | :--- | :---: |
-| **Site Básico em HTML5** | Criação de site básico com 5 páginas em
-HTML5. | [Ver Projeto](https://github.com/joaoopedro2007/meu-site) |
-| **Deploy de Site** | Publicação de site no github pages. | [Ver
-Projeto](./AT2-Deploy-de-Site/) |
+| **Site Básico em HTML5** | Criação de site básico com 5 páginas em HTML5. | [Ver Projeto](https://github.com/joaoopedro2007/meu-site) |
+| **Deploy de Site** | Publicação de site no github pages. | [Ver Projeto](./AT2-Deploy-de-Site/) |
 | **Calculadora de IMC** | Desenvolvimento de uma calculadora de IMC com JavaScript. | [Ver Projeto](https://github.com/joaoopedro2007/Calculadora-IMC) |
 | **Site com Bootstrap** | Aplicação do Bootstrap para o desenvolvimento de um site com múltiplas páginas. | [Ver Projeto](https://github.com/joaoopedro2007/PixelVerse) |
 | **Desenvolvimento com IA** | Copilotando o desenvolvimento front-end com IA. | [Ver Projeto](https://github.com/joaoopedro2007/Margem-Humana) |
 #### 🗃 Modelagem de Banco de Dados
 | Projeto | Descrição | Link |
 | :--- | :--- | :---: |
-| **Nome do projeto** | Documento de Requisitos, Modelagem ER e Scripts
-SQL. | [Ver Projeto](./projeto-banco-dados/) |
+| **Nome do projeto** | Documento de Requisitos, Modelagem ER e Scripts SQL. | [Ver Projeto](./projeto-banco-dados/) |
 ---
 ### 🏗 Estrutura do Repositório
 Abaixo, a organização deste repositório para facilitar a navegação:
