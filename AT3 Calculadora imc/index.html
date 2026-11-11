@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de IMC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #F3EEE6;
+    --ink: #332820;
+    --muted: #8C7F72;
+    --line: #DED2C0;
+    --card: #FFFFFF;
+    --accent: #8B5E4A;
+  }
+  *{ box-sizing: border-box; }
+  body{
+    margin:0;
+    padding: 50px 18px;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    display:flex;
+    justify-content:center;
+  }
+  .wrap{ width:100%; max-width: 400px; }
+
+  h1{
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 6px;
+  }
+  p.sub{
+    color: var(--muted);
+    font-size: 14px;
+    margin: 0 0 28px;
+  }
+
+  .card{
+    position: relative;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 30px 24px 26px;
+    box-shadow: 0 1px 2px rgba(51,40,32,0.04), 0 8px 24px rgba(51,40,32,0.06);
+    overflow: hidden;
+  }
+  .card::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(to right, #5C8A99, #6F9463, #BE953C, #C97B4A, #AD5A3E, #7A3B3B);
+  }
+
+  fieldset{ border:none; padding:0; margin: 0 0 16px; }
+  legend{
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 8px;
+    padding:0;
+  }
+  .opcoes{
+    display:flex;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 3px;
+    gap: 3px;
+  }
+  .opcoes input{
+    position:absolute;
+    opacity:0;
+    width:0; height:0;
+  }
+  .opcoes label{
+    display:flex;
+    flex:1;
+    justify-content:center;
+    align-items:center;
+    padding: 7px 8px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--muted);
+    border-radius: 6px;
+    cursor:pointer;
+    transition: background 0.15s, color 0.15s;
+  }
+  .opcoes input:checked + label{
+    background: var(--card);
+    color: var(--ink);
+    box-shadow: 0 1px 2px rgba(51,40,32,0.12);
+  }
+
+  .duas-colunas{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 6px;
+  }
+  .campo label{
+    display:block;
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .campo input{
+    width:100%;
+    padding: 10px 12px;
+    font-size: 15px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: #FBFAF7;
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .campo input:focus{
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(139,94,74,0.12);
+  }
+
+  .erro{
+    display:none;
+    color: #B4453D;
+    font-size: 13px;
+    margin: 10px 0 0;
+  }
+
+  button{
+    width:100%;
+    margin-top: 20px;
+    padding: 13px;
+    font-size: 15px;
+    font-weight: 600;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(139,94,74,0.25);
+    transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+  }
+  button:hover{
+    background: #7C5240;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(139,94,74,0.3);
+  }
+  button:active{ transform: translateY(0); }
+
+  #resultado{
+    display:none;
+    margin-top: 24px;
+    padding-top: 22px;
+    border-top: 1px solid var(--line);
+    animation: surgir 0.35s ease;
+  }
+  @keyframes surgir{
+    from{ opacity: 0; transform: translateY(4px); }
+    to{ opacity: 1; transform: translateY(0); }
+  }
+
+  .scale-bar{
+    position: relative;
+    height: 6px;
+    border-radius: 3px;
+    margin: 10px 6px 12px;
+    background: linear-gradient(to right,
+      #5C8A99 0%, #5C8A99 11.7%,
+      #6F9463 11.7%, #6F9463 33.3%,
+      #BE953C 33.3%, #BE953C 50%,
+      #C97B4A 50%, #C97B4A 66.7%,
+      #AD5A3E 66.7%, #AD5A3E 83.3%,
+      #7A3B3B 83.3%, #7A3B3B 100%
+    );
+  }
+  .scale-marker{
+    position:absolute;
+    top: 50%;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid var(--ink);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    transform: translate(-50%, -50%);
+    transition: left 0.5s cubic-bezier(.3,1,.3,1);
+  }
+  .scale-labels{
+    display:flex;
+    justify-content:space-between;
+    font-size: 11px;
+    color: var(--muted);
+    margin: 0 4px 20px;
+  }
+
+  .resumo{ text-align:center; }
+  .numero{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 6px;
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1;
+  }
+  .numero span{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--muted);
+  }
+  .classificacao{
+    display:inline-block;
+    margin-top: 12px;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  }
+  .mensagem{
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 12px;
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <h1>Calculadora de IMC</h1>
+  <p class="sub">Calcule seu Índice de Massa Corporal</p>
+
+  <div class="card">
+
+    <fieldset>
+      <legend>Você é</legend>
+      <div class="opcoes">
+        <input type="radio" id="adulto" name="tipo" value="adulto" checked>
+        <label for="adulto">Adulto</label>
+        <input type="radio" id="crianca" name="tipo" value="crianca">
+        <label for="crianca">Criança</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Sexo</legend>
+      <div class="opcoes">
+        <input type="radio" id="homem" name="sexo" value="homem" checked>
+        <label for="homem">Homem</label>
+        <input type="radio" id="mulher" name="sexo" value="mulher">
+        <label for="mulher">Mulher</label>
+      </div>
+    </fieldset>
+
+    <div class="duas-colunas">
+      <div class="campo">
+        <label for="peso">Peso (kg)</label>
+        <input type="text" inputmode="decimal" id="peso" placeholder="70">
+      </div>
+      <div class="campo">
+        <label for="altura">Altura (m)</label>
+        <input type="text" inputmode="decimal" id="altura" placeholder="1.75">
+      </div>
+    </div>
+
+    <div class="erro" id="erro">Preencha peso e altura com valores válidos maiores que zero.</div>
+
+    <button onclick="calcularIMC()">Calcular</button>
+
+    <div id="resultado">
+      <div class="scale-bar">
+        <div class="scale-marker" id="marcador" style="left:0%"></div>
+      </div>
+      <div class="scale-labels">
+        <span>15</span>
+        <span>45+</span>
+      </div>
+      <div class="resumo">
+        <div class="numero" id="valorImc">--<span>kg/m²</span></div>
+        <div class="classificacao" id="classificacaoImc"></div>
+        <div class="mensagem" id="mensagemImc"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function calcularIMC() {
+  const pesoStr = document.getElementById('peso').value.trim().replace(',', '.');
+  const alturaStr = document.getElementById('altura').value.trim().replace(',', '.');
+  const peso = parseFloat(pesoStr);
+  let altura = parseFloat(alturaStr);
+
+  // Se a altura vier sem separador decimal (ex: "176"), interpreta como centímetros
+  if (!isNaN(altura) && altura >= 3) {
+    altura = altura / 100;
+  }
+  const erroEl = document.getElementById('erro');
+  const resultadoEl = document.getElementById('resultado');
+
+  if (isNaN(peso) || isNaN(altura) || peso <= 0 || altura <= 0) {
+    erroEl.style.display = 'block';
+    resultadoEl.style.display = 'none';
+    return;
+  }
+  erroEl.style.display = 'none';
+
+  // Cálculo do IMC: Peso ÷ (Altura × Altura)
+  const imc = peso / (altura * altura);
+
+  let classificacao, mensagem, cor;
+
+  if (imc < 18.5) {
+    classificacao = 'Baixo peso';
+    mensagem = 'Você está abaixo do peso considerado saudável. Procure orientação de um profissional de saúde.';
+    cor = '#5C8A99';
+  } else if (imc < 25) {
+    classificacao = 'Peso normal';
+    mensagem = 'Parabéns! Você está dentro do peso adequado.';
+    cor = '#6F9463';
+  } else if (imc < 30) {
+    classificacao = 'Sobrepeso';
+    mensagem = 'Você está com sobrepeso. Considere hábitos mais saudáveis e procure orientação profissional.';
+    cor = '#BE953C';
+  } else if (imc < 35) {
+    classificacao = 'Obesidade grau I';
+    mensagem = 'É recomendável buscar acompanhamento médico ou nutricional.';
+    cor = '#C97B4A';
+  } else if (imc < 40) {
+    classificacao = 'Obesidade grau II';
+    mensagem = 'É importante buscar acompanhamento médico para cuidar da sua saúde.';
+    cor = '#AD5A3E';
+  } else {
+    classificacao = 'Obesidade grau III (mórbida)';
+    mensagem = 'Procure acompanhamento médico especializado o quanto antes.';
+    cor = '#7A3B3B';
+  }
+
+  // Posição do marcador na barra de escala (15 a 45 kg/m²)
+  const min = 15, max = 45;
+  const clamped = Math.min(Math.max(imc, min), max);
+  const pct = ((clamped - min) / (max - min)) * 100;
+  document.getElementById('marcador').style.left = pct + '%';
+
+  document.getElementById('valorImc').innerHTML = imc.toFixed(2) + '<span>kg/m²</span>';
+  const badge = document.getElementById('classificacaoImc');
+  badge.textContent = classificacao;
+  badge.style.background = cor;
+  document.getElementById('mensagemImc').textContent = mensagem;
+
+  resultadoEl.style.display = 'block';
+}
+</script>
+
+</body>
+</html>
