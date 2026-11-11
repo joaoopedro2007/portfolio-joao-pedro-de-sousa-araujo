@@ -13,3 +13,7 @@ Com as configurações realizadas, o **GitHub Pages** disponibilizou um link pú
 Por fim, foram realizados testes para conferir se o site estava funcionando corretamente, incluindo a navegação entre os quatro cenários, a exibição das informações e os elementos interativos.
 
 Esse processo proporcionou uma experiência prática sobre como publicar e disponibilizar um projeto Front-End na internet.
+
+[Clique para acessar](https://joaoopedro2007.github.io/meu-site/)
+---
+[Voltar ao início](https://github.com/joaoopedro2007/meu-site)
