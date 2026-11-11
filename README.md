@@ -38,12 +38,9 @@ Atualmente cursando o 2º período de Análise e Desenvolvimento de Sistemas na 
 HTML5. | [Ver Projeto](https://github.com/joaoopedro2007/meu-site) |
 | **Deploy de Site** | Publicação de site no github pages. | [Ver
 Projeto](./AT2-Deploy-de-Site/) |
-| **Calculadora de IMC** | Desenvolvimento de uma calculadora de IMC com
-JavaScript. | [Ver Projeto](https://github.com/joaoopedro2007/Calculadora-IMC) |
-| **Site com Bootstrap** | Aplicação do Bootstrap para o desenvolvimento
-de um site com múltiplas páginas. | [Ver Projeto](https://github.com/joaoopedro2007/PixelVerse) |
-| **Desenvolvimento com IA** | Copilotando o desenvolvimento front-end
-com IA. | [Ver Projeto](https://github.com/joaoopedro2007/Margem-Humana) |
+| **Calculadora de IMC** | Desenvolvimento de uma calculadora de IMC com JavaScript. | [Ver Projeto](https://github.com/joaoopedro2007/Calculadora-IMC) |
+| **Site com Bootstrap** | Aplicação do Bootstrap para o desenvolvimento de um site com múltiplas páginas. | [Ver Projeto](https://github.com/joaoopedro2007/PixelVerse) |
+| **Desenvolvimento com IA** | Copilotando o desenvolvimento front-end com IA. | [Ver Projeto](https://github.com/joaoopedro2007/Margem-Humana) |
 #### 🗃 Modelagem de Banco de Dados
 | Projeto | Descrição | Link |
 | :--- | :--- | :---: |
