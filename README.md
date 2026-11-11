@@ -6,8 +6,7 @@
 
 [![Email](https://img.shields.io/badge/-Email-000?style=for-the-badge&logo=microsoft-outlook&logoColor=007BFF)](https://mail.google.com/mail/?view=cm&fs=1&to=jpsouzaaa2024@gmail.com)
 
-[![Currículo](https://img.shields.io/badge/Currículo-000000?style=for-th
-e-badge&logo=read-the-docs&logoColor=white)](LINK_DO_PDF_OU_SITE)
+[![Currículo](https://docs.google.com/document/d/1KEpPm4rweLs9DYuuDjN_pF5q8blGmpDK/edit)
 ---
 ### 󰞵 Sobre
 Atualmente cursando o 2º período de Análise e Desenvolvimento de Sistemas na Universidade Cidade de São Paulo - Unicid. Sou apaixonado por resolver problemas através da tecnologia e possuo foco em Desenvolvimento Back-End e Cibersegurança
