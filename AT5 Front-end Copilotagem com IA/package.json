@@ -1,0 +1,20 @@
+{
+  "name": "margem-humana",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test core.test.js",
+    "build": "node build.mjs",
+    "test:ui": "node --test ui.test.cjs",
+    "test:all": "npm run test && npm run test:ui",
+    "check": "npm run build && npm test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "jsdom": "26.0.0",
+    "css-tree": "3.1.0"
+  }
+}

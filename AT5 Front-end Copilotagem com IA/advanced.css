@@ -1,0 +1,27 @@
+/* Efeitos opcionais. Estilos do pacote elaborados com assistência de IA; a dupla deve revisar a autoria e registrar suas mudanças. */
+@keyframes mh-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#simulator-root > h3 {
+  animation: mh-arrive 220ms ease-out;
+}
+.mh-glass {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+}
+.theme-dark .mh-glass {
+  background: rgba(21, 38, 48, 0.94);
+  color: #edf2f5;
+}
+@media (prefers-reduced-motion: reduce) {
+  #simulator-root > h3 {
+    animation: none;
+  }
+}
