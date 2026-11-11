@@ -43,7 +43,7 @@ Atualmente cursando o 2º período de Análise e Desenvolvimento de Sistemas na 
 #### 🗃 Modelagem de Banco de Dados
 | Projeto | Descrição | Link |
 | :--- | :--- | :---: |
-| **Nome do projeto** | Documento de Requisitos, Modelagem ER e Scripts SQL. | [Ver Projeto](./projeto-banco-dados/) |
+| **Academia Vitalis Fitness** | Documento de Requisitos, Modelagem ER e Scripts SQL. | [Ver Projeto](https://docs.google.com/document/d/1rwJgNc_7gDU1CWTghmf8lOBPG1UgjO4d/edit#heading=h.vf8qtgq488oq) |
 ---
 ### 🏗 Estrutura do Repositório
 Abaixo, a organização deste repositório para facilitar a navegação:
