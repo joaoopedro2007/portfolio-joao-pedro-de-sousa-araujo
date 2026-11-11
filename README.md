@@ -35,7 +35,7 @@ Atualmente cursando o 2º período de Análise e Desenvolvimento de Sistemas na 
 | Projeto | Descrição | Link |
 | :--- | :--- | :---: |
 | **Site Básico em HTML5** | Criação de site básico com 5 páginas em
-HTML5. | [Ver Projeto](./AT1-Paginas-HTML/) |
+HTML5. | [Ver Projeto](https://github.com/joaoopedro2007/meu-site) |
 | **Deploy de Site** | Publicação de site no github pages. | [Ver
 Projeto](./AT2-Deploy-de-Site/) |
 | **Calculadora de IMC** | Desenvolvimento de uma calculadora de IMC com
