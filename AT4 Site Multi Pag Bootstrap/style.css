@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #eef1fb;
+  color: #222;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px 10px 20px;
+  line-height: 1.5;
+}
+
+header {
+  background: #2b3578;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 -20px 20px -20px;
+}
+
+header h1 {
+  margin: 5px 0;
+}
+
+nav a {
+  color: #ffd966;
+  margin-right: 15px;
+}
+
+h2 {
+  color: #2b3578;
+}
+
+h3 {
+  color: #c0392b;
+}
+
+a {
+  color: #2b3578;
+}
+
+img {
+  max-width: 100%;
+  border: 2px solid #2b3578;
+}
+
+.banner {
+  width: 100%;
+}
+
+.jogo {
+  background: white;
+  border: 1px solid #2b3578;
+  border-left: 6px solid #c0392b;
+  padding: 5px 15px 10px 15px;
+  margin-bottom: 15px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: white;
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 6px;
+  text-align: left;
+}
+
+th {
+  background: #2b3578;
+  color: white;
+}
+
+tr:nth-child(even) td {
+  background: #eef1fb;
+}
+
+details {
+  margin-bottom: 8px;
+}
+
+summary {
+  color: #2b3578;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  max-width: 350px;
+}
+
+input[type="checkbox"] {
+  width: auto;
+}
+
+button {
+  background: #2b3578;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+footer {
+  border-top: 2px solid #2b3578;
+  margin-top: 30px;
+  font-size: 14px;
+}

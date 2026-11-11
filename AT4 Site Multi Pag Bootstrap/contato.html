@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato | PixelVerse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>PixelVerse</h1>
+    <nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="dados.html">Dados</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+  </header>
+  <main>
+    <h2>Contato e feedback</h2>
+    <p>Conte o que achou do PixelVerse!</p>
+
+    <form id="formulario">
+      <p>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" required minlength="2">
+      </p>
+      <p>
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" required>
+      </p>
+      <p>
+        <label for="assunto">Assunto:</label><br>
+        <select id="assunto" required>
+          <option value="">Selecione...</option>
+          <option>Sugestão</option>
+          <option>Dúvida</option>
+          <option>Elogio</option>
+          <option>Outro</option>
+        </select>
+      </p>
+      <p>
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" rows="5" required minlength="10"></textarea>
+      </p>
+      <p>
+        <input type="checkbox" id="aceite" required>
+        <label for="aceite">Concordo em compartilhar estas informações para contato.</label>
+      </p>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <p id="resposta"></p>
+    <p><small>Demonstração: o formulário não envia dados a nenhum servidor.</small></p>
+  </main>
+  <footer>
+    <p>© 2026 PixelVerse - projeto educacional</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
